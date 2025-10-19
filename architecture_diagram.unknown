@@ -1,0 +1,17 @@
+digraph G {
+	User [label=User shape=ellipse]
+	"GUI Module" [label="GUI Module|Handle user input|Graph Data|Axis Points|Limits" shape=record]
+	"Graph Processor" [label="Graph Processor|Process Input Data|Prepare for Tracing" shape=record]
+	"Point Tracing Module" [label="Point Tracing Module|Trace Points using Mouse" shape=record]
+	"Data Analysis Module" [label="Data Analysis Module|Process Traced Points|Calculate Performance Metrics" shape=record]
+	"Report Generator" [label="Report Generator|Generate Report|Export to Excel" shape=record]
+	"Database/Storage" [label="Database/Storage|Store Data for Future Use" shape=record]
+	"User Interface" [label="User Interface|Handle User Interaction" shape=record]
+	User -> "GUI Module"
+	"GUI Module" -> "Graph Processor"
+	"Graph Processor" -> "Point Tracing Module"
+	"Point Tracing Module" -> "Data Analysis Module"
+	"Data Analysis Module" -> "Report Generator"
+	"Data Analysis Module" -> "Database/Storage"
+	"Report Generator" -> "User Interface"
+}

@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+pillow
+opencv-python
+pandas
+openpyxl
+pytest
+customtkinter    # optional, or use tkinter built-in
