@@ -35,22 +35,18 @@ python src/app.py
 ```
 /
 ├─ src/
-│  ├─ app.py                # Main GUI application
-│  ├─ gui.py                # Tkinter / customtkinter GUI components & event handlers
-│  ├─ image_utils.py        # Image loading & preprocessing helpers
-│  ├─ points.py             # Point collection, undo/redo
-│  ├─ transform.py          # Pixel-to-real coordinate mapping
-│  ├─ fit.py                # Curve fitting (polynomial, spline)
-│  ├─ metrics.py            # Flow/head/efficiency calculations
-│  ├─ report.py             # Excel report generation (pandas/openpyxl)
-│  └─ tests/
-│     ├─ test_transform.py
-│     └─ test_fit.py
+│  └─ curvetracing.py          # Main Python script containing GUI, tracing, and analysis logic
+│
 ├─ examples/
-│  ├─ demo_graph.png
-│  └─ demo_report_example.xlsx
-├─ requirements.txt
-├─ README.md
+│  ├─ demo_graph.png           # Sample input graph image
+│  ├─ output_trace_1.xlsx      # Example Excel output file
+│  ├─ output_trace_2.xlsx      # Another example Excel output
+│  ├─ performance_data.xlsx    # Example performance analysis data
+│
+│
+├─ requirements.txt            # Dependencies list
+├─ README.md                   # Project documentation
+
 ```
 
 ---
